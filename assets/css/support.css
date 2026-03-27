@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* =====================================
+faq
+===================================== */
+.section--faq {
+    padding: 20px var(--contentPadding);
+}
+
+.title {
+    color: var(--primary-brown);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq__item {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 343px;
+}
+
+.faq__header {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.faq__line {
+    content: '';
+    display: block;
+    height: 0.8px;
+    background-color: var(--primary-black);
+    margin-top: 5px;
+}
+
+.faq__txt {
+    font-size: 1.4rem;
+    line-height: 1.5; /* 21px */
+}
+
+/* Faq pc */
+@media screen and (min-width:769px) {
+    .section--faq {
+        padding: 64px var(--contentPadding);
+    }
+
+    .title {
+        font-size: 4.8rem;
+    }
+
+    .faq__item {
+        margin-top: 35px;
+        max-width: 960px;
+    }
+
+    .faq__item:first-of-type {
+        margin-top: 64px;
+    }
+
+    .faq__header {
+        font-size: 2.4rem;
+    }
+
+    .faq__line {
+        margin-top: 9px;
+    }
+
+    .faq__txt {
+        font-size: 2rem;
+    }
+
+    .pcBr {
+        display: none;
+    }
+}
+
+/* pc 769px */
+
+/* =====================================
+Contact
+===================================== */
+.section--contact {
+    padding: 20px var(--contentPadding);
+    background-color: var(--primary-darkbeige);
+}
+
+.contact__txt {
+    font-size: 1.4rem;
+    line-height: 1.5; /* 21px */
+    margin-top: 28px;
+    width: 100%;
+    text-align: center;
+}
+
+.form {
+    margin-top: 28px;
+}
+
+.form__parts {
+    display: block;
+    margin-top: 24px;
+}
+
+.form__parts:first-of-type {
+    margin-top: 0;
+}
+
+.contact__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+}
+
+.contact__title--required::after {
+    display: inline-block;
+    content: '必須';
+    height: 18px;
+    width: 34px;
+    text-align: center;
+    background-color: var(--primary-amber);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+.group {
+    margin-top: 8px;
+}
+
+input[type="text"],
+.group__textArea {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 2px;
+    background: var(--primary-beige);
+    font-size: 1.4rem;
+}
+
+input[type="text"]:focus,
+.group__textArea:focus {
+    outline: solid 1px var(--primary-brown);
+}
+
+::placeholder {
+    color: rgba(46, 31, 22, 0.50);
+}
+
+.group__textArea {
+    min-height: 117px;
+}
+
+.form__parts--submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 343px;
+    width: 100%;
+    margin-top: 28px;
+}
+
+/* Contact pc */
+@media screen and (min-width: 769px) {
+    .section--contact {
+        padding: 64px var(--contentPadding);
+    }
+
+    .contact__txt {
+        font-size: 2rem;
+        line-height: 1.3; 
+        margin-top: 64px;
+    }
+
+    .form {
+        margin: 64px auto 0;
+        max-width: 1280px;
+    }
+
+    .form__parts {
+        margin-top: 30px;
+    }
+
+    .contact__title {
+        font-size: 2rem;
+    }
+
+    .contact__title--required::after {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 38px;
+        height: 25px;
+    }
+
+    input[type="text"],
+    .group__textArea {
+        font-size: 2rem;
+    }
+    
+    .group--name,
+    .group--phone {
+        max-width: 500px;
+    }
+
+    .group__textArea {
+        min-height: 284px;
+    }
+
+    .btn--form {
+        margin-top: 64px;
+}
+
+
+
+}

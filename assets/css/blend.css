@@ -1,0 +1,388 @@
+@charset "utf-8";
+
+/* =====================================
+Goods
+===================================== */
+.section--goods {
+    padding: 20px 0;
+    background-color: var(--primary-darkbeige);
+}
+
+.goodsImg {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.goodsImg img {
+    border-radius: 5px;
+}
+
+.goods__detail {
+    margin: 0 auto;
+    max-width: 285px;
+}
+
+.goods__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.goods__title {
+    color: var(--primary-brown);
+    font-family: "Playfair Display";
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.goods__txt {
+    font-size: 1.4rem;
+    line-height: 1.5; 
+    margin-top: 11px;
+}
+
+.goods__price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 11px; 
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+/* Goods pc */
+@media screen and (min-width: 769px) {
+    .section--goods {
+        padding: 64px var(--contentPadding);
+        display: flex;
+        justify-content: center;
+    }
+
+    .goods__group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 1440px;
+        min-width: 0;
+        gap: 120px;
+    }
+
+    .goodsImg {
+        display: block;
+        object-fit: cover;
+        height: auto;
+        max-width: 500px;
+        min-width: 375px;
+        width: 100%;
+    }
+
+    .goods__detail {
+        max-width: none;
+    }
+
+    .goods__item {
+     margin-top: 0;
+    }
+
+    .goods__title {
+        font-size: 2.4rem;
+    }
+
+    .goods__txt {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .goods__price {
+        font-size: 2rem;
+        margin-top: 40px; 
+    }
+
+    .btn {
+        margin-top: 40px;
+    }
+}
+
+/* pc 769px */
+
+/* =====================================
+Summary
+===================================== */
+.section--summary {
+    padding: 20px;
+}
+
+.title {
+    color: var(--primary-brown);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.summary__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ .summary__item {
+    width: 100%;
+    max-width: 335px;
+    margin-top: 5px;
+}
+
+ .summary__item:first-of-type {
+    margin-top: 25px;
+}
+
+.summary__box {
+    display: block;
+    align-items: center;
+    width: 100%;
+}
+
+.summary__txtBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary__txt {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.summary__line {
+    content: '';
+    display: block;
+    height: 0.8px;
+    background-color: var(--primary-black);
+    margin-top: 5px;
+}
+
+/* Summary pc */
+@media screen and (min-width: 769px) {
+    .section--summary {
+        padding: 64px var(--contentPadding);
+    }
+
+    .title {
+        font-size: 4.8rem;
+    }
+
+    .summary__item {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .summary__item:first-of-type {
+        margin-top: 43px;
+    }
+
+    .summary__txt {
+        font-size: 2.4rem;
+    }
+}
+
+/* pc 769px */
+
+/* =====================================
+How
+===================================== */
+.section--how {
+    padding: 20px var(--contentPadding);
+    background-color: var(--primary-darkbeige);
+}
+
+.how__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.how__item {
+    display: flex;
+    padding: 33px 36px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    gap: 20px;
+    border: 2px solid var(--primary-black);
+    background: var(--primary-beige);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 343px;
+}
+
+.how__item:first-of-type {
+    margin-top: 0;
+}
+
+.how__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.morning {
+    width: 77px;
+    height: 34px;
+}
+
+.sun {
+    width: 50px;
+    height: 50px;
+}
+
+.how__txt {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.Tea {
+    width: 60px;
+    height: 60px;
+}
+
+.smell {
+    width: 45px;
+    height: 45px;
+}
+
+/* How pc */
+@media screen and (min-width: 769px) {
+    .section--how {
+        padding: 64px var(--contentPadding);
+    }
+
+    .how__box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .how__item {
+        gap: 0;
+        margin-top: 64px;
+        width: 373px;
+        height: 230px;
+        padding: 53px 51px;
+    }
+
+    .how__item:first-of-type{
+        margin-top: 64px;
+    }
+
+    .how__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .morning {
+        width: 91px;
+        height: 40px;
+    }
+
+    .sun {
+        width: 50px;
+        height: 50px;
+    }
+
+    .how__txt {
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+
+    .smell {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* pc 769px */
+
+/* =====================================
+Gift
+===================================== */
+.section--gift {
+    padding: 20px 0;
+}
+
+.title--gift {
+    margin-bottom: 20px;
+}
+
+.giftImg {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.giftImg img {
+    border-radius: 5px;
+}
+
+.gift__item {
+    margin: 0 auto;
+    max-width: 355px;
+}
+
+.gift__title {
+    margin-top: 15px;
+    font-family: "Playfair Display";
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Gift pc */
+@media screen and (min-width: 769px) {
+    .section--gift {
+        padding: 64px var(--contentPadding);
+    }
+
+    .title--gift {
+        margin-bottom: 64px;
+    }
+
+    .gift__group {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        max-width: 1054px;
+        margin: 0 auto;
+    }
+
+    .giftImg {
+        display: block;
+        object-fit: cover;
+        max-width: 500px;
+    }
+
+    .gift__item {
+        max-width: none;
+    }
+
+    .gift__title {
+        margin-top: 0;
+        font-size: 3.2rem;
+    }
+}
+
+/* pc 769px */
+
+
